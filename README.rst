@@ -1,7 +1,10 @@
-Plone 4.2 site buildout
+Plone 4.3 site buildout
 =======================
-A basic Plone 4.2 buildout. I'll update this
-when I can to keep up with the latest releases of 4.2.
+
+**ALERT - this is currently non-functional for development mode.**
+
+A basic Plone 4.3 buildout. I'll update this
+when I can to keep up with the latest releases of 4.3.
 
 All the standard Plone stuff applies. I/m building against Python 2.7.x.
 Make sure you have all the system environment stuff you need,
@@ -28,11 +31,11 @@ Setup your virtual environment and get the buildout
   virtualenv venv-*PROJECT*
   source venv-*PROJECT*/bin/activate
   mkdir -p ../buildout-cache/{eggs,downloads}
-  git clone https://github.com/itd/plone-4.2-buildout.git *PROJECT*-buildout
+  git clone https://github.com/LEAMgroup/planning-portal.git *PROJECT*
 
 
 Change the name of the **site-id** assignment variable in buildout.cfg
-(it is currently set to *tool*), then run the buildout::
+(it is currently set to *leam*), then run the buildout::
 
   ./bin/buildout -c develop.cfg
 
@@ -40,7 +43,9 @@ Change the name of the **site-id** assignment variable in buildout.cfg
 What the heck? Running "./bin/buildout" doesn't work!
 --------------------------------------------------------
 I run my builds as either develop.cfg or production.cfg
-so there's no guessing. We're all smart. Deal with it.
+so there's no guessing.
+
+*Originally implemented by the original author but I like the idea!*
 
 On my dev boxes, I do a::
 
